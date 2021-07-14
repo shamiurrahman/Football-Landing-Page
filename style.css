@@ -93,27 +93,27 @@ img {
     grid-row-gap: 20px;
     grid-column-gap: 20px;
 }
-.profile .players-profile .single-profile  {
+.profile .players-profile .single-players  {
     padding: 15px 15px 30px 15px;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
     border: 2px solid #f1f1f1;
     transition: all linear .3s;    
 }
 
-.profile .players-profile .single-profile .profile-img {
+.profile .players-profile .single-players .post-thumbnail {
     overflow: hidden;
 }
-.profile .players-profile .single-profile .profile-img img {
+.profile .players-profile .single-players .post-thumbnail img {
     width: 100%;    
     transform: scale(1);
     cursor: pointer;
     transition: all linear .3s;
 }
-.profile .players-profile .single-profile .profile-img:hover img {
+.profile .players-profile .single-players .post-thumbnail:hover img {
     transform: scale(1.15);
 }
 
-.profile .players-profile .single-profile .player-info .player-name {
+.profile .players-profile .single-players .player-info .player-name {
     font-size: 28px;
     font-weight: 700;
     color: #18191F;
@@ -121,10 +121,10 @@ img {
     cursor: pointer;
     transition: all linear .3s;
 }
-.profile .players-profile .single-profile:hover .player-info .player-name {
+.profile .players-profile .single-players:hover .player-info .player-name {
     color: #E02C6D;
 }
-.profile .players-profile .single-profile .player-info .player-description {
+.profile .players-profile .single-players .player-info .player-description {
     font-size: 16px;
     font-weight: 500;
     color: #6C6C6C;
