@@ -1,0 +1,338 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/*Common css start*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;    
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+img {
+    vertical-align: middle;
+}
+.bg-area {
+    width: 100%;  
+    display: flex;  
+    justify-content: center;       
+}
+.container {
+    width: 960px;
+    display: flex;      
+    align-items: center;  
+        
+}
+.half-area {
+    width: 50%;
+}
+.section-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #18191F;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/*-------- Banner start------*/
+.banner {
+    background-color: #2D25A0;
+    padding: 80px 0 70px;
+}
+
+.banner-text .banner-heading {
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.banner-text .button {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    transition: all linear .3s;
+}
+.banner-text .button:hover {
+    background-color: #ffffff;
+    color: #000000;    
+}
+.banner-text .button .fa-arrow-right {
+    margin-left: 8px;
+}
+.banner-img .img {
+    padding-left: 70px;
+}
+.banner-img .img img {
+    width: 100%;
+    transform: scale(1);
+    transition: all linear .3s;
+}
+.banner-img .img:hover img {
+    transform: scale(1.2);
+}
+/*-------- Banner End------*/
+
+/*--All players Profile Start--*/
+.profile {
+    margin-top: 70px;
+}
+.profile .players-profile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+.profile .players-profile .single-profile  {
+    padding: 15px 15px 30px 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    border: 2px solid #f1f1f1;
+    transition: all linear .3s;    
+}
+
+.profile .players-profile .single-profile .profile-img {
+    overflow: hidden;
+}
+.profile .players-profile .single-profile .profile-img img {
+    width: 100%;    
+    transform: scale(1);
+    cursor: pointer;
+    transition: all linear .3s;
+}
+.profile .players-profile .single-profile .profile-img:hover img {
+    transform: scale(1.15);
+}
+
+.profile .players-profile .single-profile .player-info .player-name {
+    font-size: 28px;
+    font-weight: 700;
+    color: #18191F;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+.profile .players-profile .single-profile:hover .player-info .player-name {
+    color: #E02C6D;
+}
+.profile .players-profile .single-profile .player-info .player-description {
+    font-size: 16px;
+    font-weight: 500;
+    color: #6C6C6C;
+    text-align: justify;
+}
+
+/*--All players Profile End--*/
+
+/*-------feature video start-------*/
+.feature {
+    margin-top: 70px;
+}
+.feature .featured-videos .videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+.feature .videos .single-video {
+    padding: 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    border: 2px solid #fff;
+    transition: all linear .3s;
+}
+.feature .videos .single-video:hover {
+    border: 2px solid #2D25A0;
+}
+.feature .videos .single-video .thumbnail {
+    position: relative;
+}
+
+.feature .videos .single-video .thumbnail img {
+    width: 100%;    
+}
+
+.feature .videos .single-video .thumbnail .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 36, 36, 0.7);
+    opacity: 0;
+    transition: all linear .3s;
+}
+.feature .videos .single-video:hover .thumbnail .overlay {
+    opacity: 1;
+} 
+.feature .videos .single-video .thumbnail .fa-play-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #fff;     
+    opacity: 0;
+    transition: all linear .5s;
+}
+.feature .videos .single-video:hover .thumbnail .fa-play-circle {
+    opacity: 1;
+}
+
+/*-------feature video End-------*/
+
+/*-------Latest news Start-------*/
+.latest-news {
+    margin-top: 70px;
+}
+.latest-news .all-news .news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.latest-news .news .single-news {
+    display: flex;
+    border: 2px solid #fff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.latest-news .news .single-news .img {
+    margin-right: 15px;
+}
+.latest-news .news .single-news .img img {
+    width: 120px;
+    height: 100px;
+    cursor: pointer;
+}
+.latest-news .news .single-news .news-update .last-time {
+    font-size: 16px;
+    font-weight: 500;
+    color: #E02C6D;
+}
+
+.latest-news .news .single-news .news-update .news-heading {
+    font-size: 18px;
+    font-weight: 600;
+    color: #18191F;
+    cursor: pointer;
+    transition: all linear .2s;
+}
+.latest-news .news .single-news .news-update .news-heading:hover {
+    color: #E02C6D;
+    text-decoration: underline;
+}
+/*-------Latest news End-------*/
+
+/*-------Footer Start-------*/
+.footer {
+    margin-top: 70px;
+    padding-bottom: 50px;
+}
+.footer .container{
+    display: flex;
+    flex-direction: column;
+}
+.footer .logo img {
+    width: 485px;
+    height: 110px;
+}
+.footer .social-media i {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #E7E7E8;
+    color: #969BAB;
+    margin: 17px 7px;
+    transition: all linear .3s;
+}
+
+.footer .footer-text .text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+.footer .footer-text .fa-copyright {
+    color: #7d7d81;
+}
+/*-------Footers End-------*/
+
+/*--- Responsive Start----*/
+
+@media (min-width: 375px) and (max-width: 767.98px) {
+    .banner-text .banner-heading {
+        font-size: 46px;   
+    }
+    .banner .container {
+        flex-direction: column;
+	    padding: 30px 60px;
+    }
+    .container {
+        padding: 15px;
+    }
+    .half-area {
+        width: 100%;
+    }
+    .banner-img .img {
+        padding-left: 0;
+        margin-top: 70px;
+    }
+    .profile .players-profile {        
+        grid-template-columns: repeat(1, 1fr);       
+    }
+    .feature .featured-videos .videos {        
+        grid-template-columns: repeat(1, 1fr); 
+        grid-row-gap: 20px;       
+    }
+    .latest-news .all-news .news {     
+        grid-template-columns: repeat(1, 1fr);       
+    }
+    .footer .logo img {
+        width: 280px;  
+        height: 80px;     
+    }
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1199.98px) { 
+    .banner .container {
+        flex-direction: column;
+	    padding: 30px 60px;
+    }
+    .container {
+        padding: 15px;
+    }
+    .half-area {
+        width: 100%;
+    }
+    .banner-img .img {
+        padding-left: 20px;
+        margin-top: 70px;
+    }
+    .profile .players-profile {        
+        grid-template-columns: repeat(2, 1fr);       
+    }
+    .feature .featured-videos .videos {        
+        grid-template-columns: repeat(1, 1fr);  
+        grid-row-gap: 20px;      
+    }
+    .latest-news .all-news .news {     
+        grid-template-columns: repeat(1, 1fr);       
+    }
+ }
+ /*--- Responsive End----*/
